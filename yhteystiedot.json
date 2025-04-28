@@ -1,0 +1,42 @@
+[
+  {
+    "element": "div",
+    "className": "hero bg-yhteystiedot"
+  },
+  {
+    "element": "div",
+    "className": "body-content",
+    "children":[
+      {
+        "element": "h1",
+        "textContent": "Yhteystiedot"
+      },
+      {
+        "element": "h3",
+        "textContent": "The Company Oy"
+      },
+      {
+        "element": "span",
+        "textContent": "Sepusenkatu 22, 15123 Mähkömaa"
+      },
+      {
+        "element": "br"
+      },
+      {
+        "element": "span",
+        "textContent": "puh. 040 1092 8332"
+      },
+      {
+        "element": "br"
+      },
+      {
+        "element": "span",
+        "textContent": "email: etumimi.sukunimi@thecompanyoy.fi"
+      },
+      {
+        "element": "div",
+        "className": "gap-big"
+      }
+    ]
+  }
+]

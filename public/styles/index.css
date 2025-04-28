@@ -1,0 +1,305 @@
+:root{
+  /* LAYOUT */
+  --color-main: rgb(12, 103, 194);
+  --color-main-opacue: rgba(0, 52, 104, 0.538);
+  --color-main-opacue-dark: rgba(1, 18, 66, 0.779);
+  --color-main-dark-theme: rgb(30, 29, 45);
+
+  --color-main-light:rgb(121, 164, 207);
+  --text-color-dark:rgb(169, 186, 203);
+}
+
+html {
+  box-sizing: border-box;
+  background-color: black;
+  scroll-behavior: smooth;
+  color: black;
+  transition: color 0.5s ease-in-out;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+ html .dark{
+  color: var( --text-color-dark);
+  transition: color 0.5s ease-in-out;
+}
+h1,h2,h3{text-align: center;}
+h1{ margin-top: 60px; margin-bottom: 40px;}
+
+.dark h1,.dark h2,.dark h3{ color: var(--color-main-light);}
+
+body, body .light{
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  font-size: 1em;
+  background-color: gainsboro;
+  width: 100vw;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease-in-out;
+}
+body .dark{
+  background-color: var(--color-main-dark-theme);
+  transition: background-color 0.5s ease-in-out;
+}
+#root{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+}
+#navbar{
+  position: fixed;
+  justify-content: center;
+  z-index:1;
+  width:100vw;
+  display: flex;
+  gap: 20px;
+  background-color: var(--color-main-opacue);
+  padding: 20px;
+  padding-top: 30px;
+  color: white;
+  font-weight: 100;
+  -webkit-backdrop-filter: blur(6px); /* Add this line first, it fixes blur for Safari*/
+  backdrop-filter: blur(6px);  /* This line activates blur*/
+  border-bottom: solid 5px  var(--color-main);
+  text-transform: uppercase;
+
+}
+.loading{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.dark{
+  transition: background-color 0.5s ease-in-out;
+}
+.dark #navbar{
+  background-color: var( --color-main-opacue-dark);
+
+}
+#body-container{
+  justify-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+  width: 100vw;
+}
+#body-content{
+  width: 80%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.row-item{
+  width: 25vw;
+  gap: 10px;
+}
+.row img{
+  height: 17vw;
+  object-fit: cover;
+  border: solid 1px var(--color-main);
+}
+.caption{
+  margin-bottom: 20px;
+  margin-top:10px;
+  color: var(--color-main);
+}
+.dark .caption{
+  color: var(--color-main-light)
+}
+
+#navbar a, #navbar a.visited{
+  text-decoration: none;
+  color: white;
+}
+
+#navbar a {
+  position: relative;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-left: solid 1px #00000000;
+  border-right: solid 1px #00000000;
+  transition: border 1s ease-out;
+}
+
+a.active{
+  border-left: solid 1px var(--color-main-light) !important;
+  border-right: solid 1px var(--color-main-light) !important;
+  transition: border 1s ease-out;
+  text-shadow: -1px -1px 2px rgba(0,0,0,0.6);
+}
+
+.passive::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, #fdfdfd, #fefefe);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s ease-out;
+}
+
+
+.passive:hover::after{
+  transform: scaleX(1);
+}
+.passive{
+   cursor: pointer;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  width: 100vw;
+  font-size: 12px;
+  background-color: black;
+  color: rgb(122, 122, 122);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.hero{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color:rgb(191, 191, 191);
+  background-image: url("../media/index.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  padding-bottom:25px;
+}
+.bg-palvelut{
+  background-image: url("../media/palvelut.jpeg");
+}
+.bg-yhteystiedot{
+  background-image: url("../media/duunarit.jpg");
+  background-position: center top;
+  height: 70vh;
+}
+.workers-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80vw;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.workers-container h5{
+  margin: 5px;
+  font-size: 16px;
+}
+.workers-container span{
+  margin: 5px;
+  color: var(--color-main);
+}
+.dark .workers-container span{
+  color: var(--color-main-light);
+}
+.worker img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+button{
+  background-color:  var(--color-main-opacue);
+  padding: 10px 20px 10px 35px;
+  font-size: 16px;
+  border-radius: 10px 4px 4px 100px;
+  border: solid 1px var(--color-main);
+  color: white;
+  transition-duration: 1s;
+  -webkit-backdrop-filter: blur(5px); /* Add this line first, it fixes blur for Safari*/
+  backdrop-filter: blur(5px);  /* This line activates blur*/
+}
+.dark button{
+  background-color: var( --color-main-opacue-dark);
+}
+button:hover{
+  cursor: pointer;
+  background-color: var(--color-main);
+  padding: 10px 10px 10px 45px;
+  border-radius: 100px 4px 4px 10px;
+}
+.columns-3 {
+  column-count: 3;
+}
+img{
+  width: 100%;
+  border-radius: 8px;
+}
+.gap{
+  height: 40px;
+}
+.gap-big{
+  height: 60px;
+}
+
+@media (max-width: 800px) {
+  .columns-3 {
+    column-count: 2;
+  }
+  .hero button{
+    margin-bottom: 10px;
+    padding: 7px 15px;
+    border: none;
+  }
+  .hero{
+    height: 75vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .columns-3 {
+    column-count: 1;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .row-item{
+    width: 100%;
+  }
+  .row img{
+    height: 50vw;
+    margin-top: 20px;
+  }
+
+
+
+}

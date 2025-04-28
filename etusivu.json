@@ -1,0 +1,46 @@
+[
+      {
+        "element": "div",
+        "className": "hero index",
+        "children": [
+         {
+          "element": "a",
+           "href": "#katsolisaa",
+           "children": [{
+            "id": "katsolisaa",
+            "element": "button",
+            "textContent": "Katso lisää"
+           }]
+
+        }
+        ]
+      },
+      {
+        "element": "div",
+        "id": "body-content",
+        "children":[
+          {
+            "element": "h1",
+            "textContent": "Etusivu"
+          },
+          {
+            "element": "p",
+            "className": "columns-3",
+            "textContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar mi et mauris consequat placerat. Vestibulum egestas, est et eleifend eleifend, elit lorem placerat augue, et venenatis est mauris et nunc. Ut ut nulla in lectus feugiat varius. Maecenas eget lobortis massa, vel vulputate sem. Donec ante quam, venenatis sit amet tempus et, interdum quis lorem. Pellentesque non ultrices mauris. Sed ex tellus, placerat in tincidunt ac, luctus ut sem. In iaculis, quam eget tempor fringilla, tellus justo interdum urna, molestie laoreet mi ex quis nunc. Morbi finibus mattis metus nec luctus. Aliquam elit dolor, pharetra ut neque id, varius vehicula mauris. Nulla luctus odio sit amet tellus porttitor, a imperdiet ligula porta. In hac habitasse platea dictumst. Pellentesque luctus id lorem non aliquam. Aenean malesuada enim in tempus imperdiet. Fusce egestas ipsum ligula, id pharetra urna accumsan vitae. Donec vulputate, purus sit amet eleifend gravida, arcu nisi iaculis turpis, et fermentum sapien sem et orci. Nullam suscipit erat id placerat malesuada. Integer molestie mi convallis urna euismod, sed consequat mi molestie. Curabitur tincidunt quam tortor, eget malesuada felis interdum sit amet. Proin vel elit nec eros commodo lobortis. In a faucibus magna. Fusce id nulla sed orci volutpat mollis sed sed risus. Maecenas nunc nibh, suscipit quis euismod scelerisque, dictum vel sem. Vivamus quis purus velit. Proin eu odio vel odio dapibus maximus ac quis leo. Morbi dignissim consectetur quam a viverra. Praesent elit velit, eleifend sit amet purus et, cursus euismod dui."
+          },
+          {
+            "element": "div",
+            "className": "gap"
+          },
+          {
+            "element": "img",
+            "src": "./media/ilta.jpeg"
+          },
+          {
+            "element": "div",
+            "className": "gap"
+          }
+        ]
+      }
+     
+]

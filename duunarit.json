@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "etunimi": "Jukka",
+    "sukunimi": "Palopää",
+    "kuvaus": "Toimari",
+    "img": "jukka.jpg"
+  },
+  {
+    "id": 2,
+    "etunimi": "Riitta",
+    "sukunimi": "Rapaneero",
+    "kuvaus": "Markkinointipäällikkö",
+    "img": "riitta.jpg"
+  },
+  {
+    "id": 3,
+    "etunimi": "Saara",
+    "sukunimi": "Tihura",
+    "kuvaus": "Asiakkuuspäällikkö",
+    "img": "saara.jpg"
+  },
+  {
+    "id": 4,
+    "etunimi": "Jouni",
+    "sukunimi": "Tapaherra",
+    "kuvaus": "Laatumies",
+    "img": "jouni.jpg"
+  },
+  {
+    "id": 5,
+    "etunimi": "Siri",
+    "sukunimi": "Mac",
+    "kuvaus": "Asiakasbotti",
+    "img": "siri.jpg"
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "element": "div",
+    "className": "hero bg-palvelut",
+    "children": [
+     {
+      "element": "a",
+       "href": "#palvelut",
+       "children": [{
+        "element": "button",
+        "textContent": "Hiihtohaahuilut"
+       }]
+
+    },
+    {
+      "element": "a",
+       "href": "#palvelut",
+       "children": [{
+        "element": "button",
+        "textContent": "Lumi-möngintä"
+       }]
+
+    },
+    {
+      "element": "a",
+      "id": "palvelut",
+       "href": "#palvelut",
+       "children": [{
+        "element": "button",
+        "textContent": "Iglun rakentaminen"
+       }]
+
+    }
+    ]
+  },
+  {
+    "element": "div",
+    "id": "body-content",
+    "children":[
+      {
+        "element": "h1",
+        "textContent": "Palvelut"
+      },
+      {
+        "element": "p",
+        "className": "columns-3",
+        "textContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar mi et mauris consequat placerat. Vestibulum egestas, est et eleifend eleifend, elit lorem placerat augue, et venenatis est mauris et nunc. Ut ut nulla in lectus feugiat varius. Maecenas eget lobortis massa, vel vulputate sem. Donec ante quam, venenatis sit amet tempus et, interdum quis lorem. Pellentesque non ultrices mauris. Sed ex tellus, placerat in tincidunt ac, luctus ut sem. In iaculis, quam eget tempor fringilla, tellus justo interdum urna, molestie laoreet mi ex quis nunc. Morbi finibus mattis metus nec luctus. Aliquam elit dolor, pharetra ut neque id, varius vehicula mauris. Nulla luctus odio sit amet tellus porttitor, a imperdiet ligula porta. In hac habitasse platea dictumst. Pellentesque luctus id lorem non aliquam. Aenean malesuada enim in tempus imperdiet."
+      },
+      {
+        "element": "div",
+        "className": "gap"
+      },
+      {
+        "element": "div",
+        "className": "row",
+        "children": [
+          {
+          "element": "div",
+          "className": "column",
+          "children": [
+           { 
+            "element": "img",
+            "className": "row-item",
+            "src": "./media/haahuilu.jpg"
+          },{
+            "element": "span",
+            "textContent": "Hiihtohaahuilut",
+            "className": "caption"
+          },
+          {
+            "element": "button",
+            "textContent": "Tutustu"
+          }
+          ]
+        },
+        {
+          "element": "div",
+          "className": "column",
+          "children": [
+           { 
+            "element": "img",
+            "className": "row-item",
+            "src": "./media/palvelut.jpeg"
+          },{
+            "element": "span",
+            "textContent": "Lumi-möngintä",
+            "className": "caption"
+          },
+          {
+            "element": "button",
+            "textContent": "Tutustu"
+          }
+          ]
+        },
+        {
+          "element": "div",
+          "className": "column",
+          "children": [
+           { 
+            "element": "img",
+            "className": "row-item",
+            "src": "./media/iglu.jpg"
+          },{
+            "element": "span",
+            "textContent": "Iglun rakentaminen",
+            "className": "caption"
+          },
+          {
+            "element": "button",
+            "textContent": "Tutustu"
+          }
+          ]
+        }
+       
+         
+      
+      ]
+        
+      },
+      {
+        "element": "div",
+        "className": "gap"
+      }
+    ]
+  }
+ 
+]
