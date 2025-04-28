@@ -2,7 +2,6 @@
 const path = require('path')
 const express = require('express')
 const fs = require('fs').promises
-
 const app = express()
 
 // hae data 
@@ -17,18 +16,18 @@ app.get('/api/content/:page', async (req, res) => {
     })
 
  // Pinkoodin lukeminen txt tiedostosta pelvelimelta ja lähettäminen selaimelle   
- app.get('/api/getpin', async (req, res) => {
-    try {
-        // Read the content of the text file
-        const savedPin = await fs.readFile('./pin.txt', 'utf-8')
+//  app.get('/api/getpin', async (req, res) => {
+//     try {
+//         // Read the content of the text file
+//         const savedPin = await fs.readFile('./pin.txt', 'utf-8')
         
-        // Send the file content as the response
-        res.json(savedPin)
-    } catch (error) {
-        console.error('Error reading file:', error)
-        res.status(500).send('Internal Server Error')
-    }
-    })
+//         // Send the file content as the response
+//         res.json(savedPin)
+//     } catch (error) {
+//         console.error('Error reading file:', error)
+//         res.status(500).send('Internal Server Error')
+//     }
+//     })
 
 //-------------------------------------------------------
 // Tehdään polkumääritys public kansioon 

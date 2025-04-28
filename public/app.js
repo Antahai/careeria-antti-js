@@ -176,6 +176,9 @@ const footer = [{
 state.update({
   navBar: navBar, body: body, us: [], footer: footer, theme: localStorage.getItem('theme')
 })
+const locationSplit = window.location.href.split('/')
+const path = `${locationSplit[0]}//${locationSplit[2]}/`
+console.log('path: ', path)
 
 // load front page 
 fetchData('etusivu')
@@ -185,13 +188,13 @@ async function fetchData( page ) {
   window.scrollTo({ top: 0,  behavior: 'smooth' })
 
   try {
-      const response = await fetch('http://localhost:3004/api/content/' + page)
+      const response = await fetch(`${path}api/content/${page}`)
       const data = await response.json() // muutetaan json => javascript muotoon
       let us = []
 
       // mapping duunarit to the page
       if(page === 'yhteystiedot'){
-        const response2 = await fetch('http://localhost:3004/api/content/duunarit/')
+        const response2 = await fetch(`${path}api/content/duunarit`)
         const duunarit = await response2.json() // muutetaan json => javascript muotoon
         us = duunaritJsonForPage(duunarit)
       }
